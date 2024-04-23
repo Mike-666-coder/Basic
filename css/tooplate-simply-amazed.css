@@ -101,6 +101,7 @@ a:focus {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  -webkit-background-clip: padding-box;
   height: 50px;
   background-color: transparent;
   border: 0;
@@ -616,16 +617,21 @@ textarea.form-control {
   align-items: flex-start;
 }
 
-.bg-blue-transparent { background-color: rgb(102 153 204 / 0.8); }
+.bg-blue-transparent { 
+  background-color: rgb(102 153 204 / 0.8); 
+}
 
-.banner-section .logo-fa {
-  font-weight: 900;  
+.billboard { 
+  padding: 33px 68px 34px 68px;
+}
+
+.banner-section .logo-fa {  
   color: #fff;
   max-width: 400px;
   margin-left: 5px;
   padding-top: 43px;
   padding-bottom: 35px;
-  font-size: 26px;
+  font-size: 32px;
   margin-bottom: 60px;
 }
 
@@ -642,7 +648,6 @@ textarea.form-control {
 }
 
 .banner-section .logo-fa span {
-  font-weight: 900;
   font-size: 38px;
   display: block;
   text-transform: uppercase;
@@ -660,7 +665,7 @@ textarea.form-control {
   color: #fff;
   display: inline-block;
   margin: auto;
-  margin-left: 80px;
+  margin-left: 97px;
   padding: 33px 68px 34px 68px;
 }
 
@@ -673,7 +678,6 @@ textarea.form-control {
 }
 
 .banner-section .simple p {
-  font-weight: 900;
   margin-bottom: 0;
   font-size: 22px;
 }
@@ -756,7 +760,6 @@ textarea.form-control {
 }
 
 .work-section .item p {
-  font-weight: 900;
   color: #fff;
   line-height: 31px;
   margin-bottom: 0;
@@ -774,40 +777,203 @@ textarea.form-control {
   margin-bottom: 12px;
 }
 
-/* <<< 最新消息 >>> */
-
-.news .section-1 h2 {
- margin-bottom: 300px;
- font-weight: 900;
- position: relative;
- width: 150px;
- height: 150px;
- margin-left: 650px;
+/* <<< Gallery section >>> */
+.gallery-slider figure {
+	position: relative;
+	float: left;
+  overflow: hidden;
+  margin: 0;
+  max-width: 200px;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
 }
 
-.news .section-2 a {
-  font-size: 26px;
-  font-weight: 900;
-  color: #356ba2;
-  top: -20px;
-  max-width: 500px;
-  font-style: italic;
-  position: relative;
-  top: -300px;
-  right: -100px;
+.gallery-slider figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
 }
 
-.news .section-3 a {
-  font-size: 26px;
-  font-weight: 900;
-  color: #356ba2;
-  top: -20px;
-  max-width: 500px;
-  font-style: italic;
-  position: relative;
-  top: -300px;
-  right: -100px;
+.gallery-slider figure figcaption {
+	padding: 1em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
+
+.gallery-slider figure figcaption::before,
+.gallery-slider figure figcaption::after {
+	pointer-events: none;
+}
+
+.gallery-slider figure figcaption,
+.gallery-slider figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.gallery-slider figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.gallery-slider figure h2 {
+	word-spacing: -0.15em;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.gallery-slider figure h2 span {
+	font-weight: 800;
+}
+
+.gallery-slider figure h2,
+.gallery-slider figure p {
+	margin: 0;
+}
+
+.gallery-slider figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.gallery-section {
+  background-color: #99ccff;
+}
+
+.gallery-section .title {
+  padding-right: 13px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #006699;
+}
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+figure.effect-julia {
+	background: #2f3238;
+}
+
+figure.effect-julia img {
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+	display: flex;
+  align-items: center;
+}
+
+figure.effect-julia h2 {
+	position: relative;
+	padding: 0.5em 0;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+	opacity: 0.4;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media (max-width: 767px) {
+  .gallery-section .title { margin-bottom: 40px; }
+}
+
+.gallery-section .title h2 { color: #006699; }
+.gallery-section .slick-list { margin-bottom: 40px; }
+
+.gallery-section .item {
+  margin: 5px 0px;
+}
+
+.gallery-section .slick-dots {
+  position: unset;
+  bottom: 0;
+}
+
+.gallery-section .slick-dots li {
+  background-color: #6699cc;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.gallery-section .slick-dots li.slick-active,
+.gallery-section .slick-dots li:hover {
+  background-color: #006699;
+}
+
+.gallery-section .slick-dots li button { display: none; }
 
 .contact-section {
   background-color: #6699cc;
@@ -820,9 +986,6 @@ textarea.form-control {
 .contact-section .title h3 {
   color: #fff;
   font-size: 34px;
-  position: relative;
-  height: 150px;
-  right: -50px;
 }
 
 .contact-section .contact-form .form-group { margin-bottom: 24px; }
@@ -840,16 +1003,9 @@ textarea.form-control {
 }
 
 .contact-section .contact-details p {
-  position: relative;
-  right: -50px;
-  height: 50px;
-  top: -50px;
-  font-weight: 900;
   color: #fff;
-  line-height: 26px;
-  margin-bottom: 26px;
-  font-size: 18px;
-  max-width: 800px;
+  line-height: 31px;
+  margin-bottom: 38px;
 }
 
 .contact-section .contact-details ul {
@@ -865,35 +1021,20 @@ textarea.form-control {
 
 .contact-section .contact-details ul li .icn {
   margin-right: 10px;
-  margin-bottom: 10px;
   display: inline-block;
   width: 30px;
   text-align: center;
-  position: relative;
-  top: -50px;
-  right: -50px;
 }
 
 .contact-section .contact-details ul li .lbl {
-  font-weight: 900;
   display: inline-block;
-  max-width: 100px;
+  max-width: 55px;
   width: 100%;
-  font-size: 26px;
-  position: relative;
-  top: -50px;
-  right: -50px;
 }
 
 .contact-section .contact-details ul li a {
-  font-weight: 900;
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
-  position: relative;
-  top: -50px;
-  right: -50px;
-  max-width: 800px;
 }
 
 .contact-section .contact-details ul li a:hover { color: #99ccff; }
@@ -905,6 +1046,16 @@ textarea.form-control {
   width:100%;
 }
 
+.gmap-canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:100%;
+}
+
+.link-title > a {
+  color: #fff;
+}
 
 /* <<< footer >>> */
 .footer {
