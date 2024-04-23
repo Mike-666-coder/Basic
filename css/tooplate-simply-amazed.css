@@ -896,14 +896,6 @@ textarea.form-control {
   max-width: 800px;
 }
 
-.contact .section-1 {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  top: -300px;
-  right: -500px;
-}
-
 .contact-section .contact-details ul li a:hover { color: #99ccff; }
 .contact-section .map { text-align: center; }
 
