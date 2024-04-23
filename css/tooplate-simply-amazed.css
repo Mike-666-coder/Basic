@@ -618,7 +618,8 @@ textarea.form-control {
 
 .bg-blue-transparent { background-color: rgb(102 153 204 / 0.8); }
 
-.banner-section .logo-fa {  
+.banner-section .logo-fa {
+  font-weight: 900;  
   color: #fff;
   max-width: 400px;
   margin-left: 5px;
@@ -641,6 +642,7 @@ textarea.form-control {
 }
 
 .banner-section .logo-fa span {
+  font-weight: 900;
   font-size: 38px;
   display: block;
   text-transform: uppercase;
@@ -671,6 +673,7 @@ textarea.form-control {
 }
 
 .banner-section .simple p {
+  font-weight: 900;
   margin-bottom: 0;
   font-size: 22px;
 }
@@ -753,6 +756,7 @@ textarea.form-control {
 }
 
 .work-section .item p {
+  font-weight: 900;
   color: #fff;
   line-height: 31px;
   margin-bottom: 0;
@@ -772,20 +776,38 @@ textarea.form-control {
 
 /* <<< 最新消息 >>> */
 
-.tittle text-right h2{
-  height: 50px;
-}
-.news {
-  font-size: 20px;
-  text-align: left;
-}
-
-.gallery-section .slick-dots li.slick-active,
-.gallery-section .slick-dots li:hover {
-  background-color: #006699;
+.news .section-1 h2 {
+ margin-bottom: 300px;
+ font-weight: 900;
+ position: relative;
+ width: 150px;
+ height: 150px;
+ margin-left: 650px;
 }
 
-.gallery-section .slick-dots li button { display: none; }
+.news .section-2 a {
+  font-size: 26px;
+  font-weight: 900;
+  color: #356ba2;
+  top: -20px;
+  max-width: 500px;
+  font-style: italic;
+  position: relative;
+  top: -300px;
+  right: -100px;
+}
+
+.news .section-3 a {
+  font-size: 26px;
+  font-weight: 900;
+  color: #356ba2;
+  top: -20px;
+  max-width: 500px;
+  font-style: italic;
+  position: relative;
+  top: -300px;
+  right: -100px;
+}
 
 .contact-section {
   background-color: #6699cc;
@@ -798,7 +820,9 @@ textarea.form-control {
 .contact-section .title h3 {
   color: #fff;
   font-size: 34px;
-  height: 100px;
+  position: relative;
+  height: 150px;
+  right: -50px;
 }
 
 .contact-section .contact-form .form-group { margin-bottom: 24px; }
@@ -816,10 +840,16 @@ textarea.form-control {
 }
 
 .contact-section .contact-details p {
+  position: relative;
+  right: -50px;
+  height: 50px;
+  top: -50px;
+  font-weight: 900;
   color: #fff;
-  line-height: 31px;
-  margin-bottom: 38px;
+  line-height: 26px;
+  margin-bottom: 26px;
   font-size: 18px;
+  max-width: 800px;
 }
 
 .contact-section .contact-details ul {
@@ -835,22 +865,43 @@ textarea.form-control {
 
 .contact-section .contact-details ul li .icn {
   margin-right: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   width: 30px;
   text-align: center;
+  position: relative;
+  top: -50px;
+  right: -50px;
 }
 
 .contact-section .contact-details ul li .lbl {
+  font-weight: 900;
   display: inline-block;
   max-width: 100px;
   width: 100%;
   font-size: 26px;
+  position: relative;
+  top: -50px;
+  right: -50px;
 }
 
 .contact-section .contact-details ul li a {
+  font-weight: 900;
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+  position: relative;
+  top: -50px;
+  right: -50px;
+  max-width: 800px;
+}
+
+.contact .section-1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -300px;
+  right: -500px;
 }
 
 .contact-section .contact-details ul li a:hover { color: #99ccff; }
