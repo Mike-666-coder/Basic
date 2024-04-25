@@ -631,7 +631,7 @@ textarea.form-control {
   margin-left: 5px;
   padding-top: 43px;
   padding-bottom: 35px;
-  font-size: 32px;
+  font-size: 26px;
   margin-bottom: 60px;
 }
 
@@ -680,6 +680,7 @@ textarea.form-control {
 .banner-section .simple p {
   margin-bottom: 0;
   font-size: 22px;
+  font-weight: 900;
 }
 
 @media (max-width: 991px) {
@@ -763,6 +764,7 @@ textarea.form-control {
   color: #fff;
   line-height: 31px;
   margin-bottom: 0;
+  font-weight: 900;
 }
 
 .work-section .title {
@@ -986,6 +988,8 @@ figure.effect-julia:hover p {
 .contact-section .title h3 {
   color: #fff;
   font-size: 34px;
+  position: relative;
+  margin-top: -160px;
 }
 
 .contact-section .contact-form .form-group { margin-bottom: 24px; }
@@ -1006,6 +1010,9 @@ figure.effect-julia:hover p {
   color: #fff;
   line-height: 31px;
   margin-bottom: 38px;
+  font-weight: 900;
+  position: relative;
+  margin-top: -20px;
 }
 
 .contact-section .contact-details ul {
@@ -1024,17 +1031,33 @@ figure.effect-julia:hover p {
   display: inline-block;
   width: 30px;
   text-align: center;
+  position: relative;
+  margin-top: -50px;
 }
 
 .contact-section .contact-details ul li .lbl {
   display: inline-block;
   max-width: 55px;
   width: 100%;
+  font-weight: 900;
+  position: relative;
+  margin-top: -50px;
 }
 
 .contact-section .contact-details ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 900;
+  position: relative;
+  margin-top: -50px;
+}
+
+.tm-contact-item-inner img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: -130px;
+  position: relative;
+  right: -100px;
 }
 
 .contact-section .contact-details ul li a:hover { color: #99ccff; }
