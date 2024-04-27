@@ -681,6 +681,7 @@ textarea.form-control {
   margin-bottom: 0;
   font-size: 22px;
   font-weight: 900;
+  text-align: left;
 }
 
 @media (max-width: 991px) {
