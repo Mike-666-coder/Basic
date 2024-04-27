@@ -786,6 +786,13 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width <400px) {
+  .work-section .item p {
+  margin-left: 60px;  
+  text-align: left;
+  }
+}
+
 /* <<< Gallery section >>> */
 .gallery-slider figure {
 	position: relative;
