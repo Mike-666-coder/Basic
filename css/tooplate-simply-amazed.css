@@ -779,20 +779,27 @@ textarea.form-control {
   margin-bottom: 12px;
 }
 
-@media screen and (max-width: 600px) {
-  .work-section .item p {
-  text-align: left;
-  margin-right: auto;
-  }
-}
 
 @media screen and (max-width: 600px) {
-  .work-section .item .work p {
+  .work-section .item .work-1 p {
   text-align: left;
   margin-left: 100px;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .work-section .item .work-2 p {
+  text-align: left;
+  margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work-section .item .work-3 p {
+  text-align: left;
+  margin-left: 30px;
+  }
+}
 
 /* <<< Gallery section >>> */
 .gallery-slider figure {
