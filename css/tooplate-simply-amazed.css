@@ -781,17 +781,18 @@ textarea.form-control {
 
 @media screen and (max-width: 600px) {
   .work-section .item p {
-  margin-left: 110px; 
   text-align: left;
+  margin-right: auto;
   }
 }
 
-@media screen and (max-width <400px) {
-  .work-section .item p {
-  margin-left: 60px;  
+@media screen and (max-width: 600px) {
+  .work-section .item .work p {
   text-align: left;
+  margin-left: 100px;
   }
 }
+
 
 /* <<< Gallery section >>> */
 .gallery-slider figure {
